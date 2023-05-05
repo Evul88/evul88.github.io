@@ -1,0 +1,250 @@
+body{
+    background-color: #a79ae1;
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    background: linear-gradient(#a79ae1,white,#a79ae1);
+}
+
+a{
+    text-decoration: none;
+    color: #120907;
+    font-weight: bold;
+}
+
+a.menu{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+a.menu:hover{
+    color: white;
+}
+
+#home{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+#store{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+#bag{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    margin: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 10% 40% auto;
+    gap: 10px;
+}
+
+.preview{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.preview>div{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 3px;
+    border-radius: 10px;
+}
+
+.principal-image{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.description{
+    padding: 10px;
+}
+
+.nameprice{
+    font-size: x-large;
+}
+
+.nameprice h2{
+    text-align: center;
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.nameprice h3{
+    margin-top: 0px;
+    font-size: 35px;
+    text-align: center;
+    color: orangered;
+}
+
+.buy{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.buy a{
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom right,rgb(234, 105, 105),rgb(158, 44, 44));
+}
+
+.buy a:hover{
+    border: solid 1px black;
+    background-image: linear-gradient(to bottom right,rgb(244, 148, 148),rgb(207, 73, 73));
+    color: white;
+}
+
+
+header {
+    background-color: #a79ae1;
+    position: sticky;
+    top: 0px;
+}
+
+header h1{
+    margin: 0px;
+    text-align: center;
+    color: #282641;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecera{
+    margin-bottom: 15px;
+}
+
+.logo{
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+footer {
+    background-color: #a79ae1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    padding-top: 30px;
+}
+
+footer nav{
+    text-decoration: none;
+    border: solid 1px right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3{
+    text-align: center;
+}
+
+@media screen and (max-width:960px) {
+    .logo{
+        width: 28px;
+    }
+    img{
+        width: 100%;
+    }
+    
+    .container{
+        margin: 0px;
+        padding: 10px;
+        display: grid;
+        grid-template-areas: 'principal'
+                             'imagenes'
+                             'descripcion';
+        grid-template-columns: auto auto auto;
+        gap:5px
+    }
+    
+    .preview{
+        grid-area: imagenes;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .preview>div{
+        background-color: rgba(255, 255, 255, 0.7);
+        border: solid 3px;
+        border-radius: 10px;
+    }
+    
+    .principal-image{
+        grid-area: principal;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: solid 2px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .description{
+        grid-area: descripcion;
+        padding: 5px;
+    }
+    
+    .nameprice{
+        font-size: x-large;
+    }
+    
+    .nameprice h2{
+        text-align: center;
+        margin-bottom: 0px;
+        text-decoration: underline;
+    }
+    
+    .nameprice h3{
+        margin-top: 0px;
+        font-size: 35px;
+        text-align: center;
+        color: orangered;
+    }
+    
+    .buy{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    
+    .buy a{
+        text-align: center;
+        border: solid 1px black;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-image: linear-gradient(to bottom right,rgb(234, 105, 105),rgb(158, 44, 44));
+    }
+    
+    .buy a:hover{
+        border: solid 1px black;
+        background-image: linear-gradient(to bottom right,rgb(244, 148, 148),rgb(207, 73, 73));
+        color: white;
+    }
+}

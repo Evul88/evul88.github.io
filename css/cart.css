@@ -1,0 +1,149 @@
+
+body{
+    background-color: #a79ae1;
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+main{
+    background: linear-gradient(#a79ae1,white,#a79ae1);
+}
+
+table{
+    width: 50%;
+    height: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 40px auto;
+    text-align: center;
+}
+
+th{
+    border: solid 2px #282641;
+    background-color: #282641;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+td{
+    border: solid 2px #282641;
+    padding: 15px;
+    font-size: larger;
+}
+
+td:nth-child(5){
+    border: none;
+}
+
+img{
+    width: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: #120907;
+    font-weight: bold;
+}
+
+a.menu{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+a.menu:hover{
+    color: white;
+}
+
+#home{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+#store{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+#bag{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+
+.pay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pay a{
+    border: solid 1px #282641;
+    padding: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(to top left, rgb(209, 178, 0), yellow, rgb(209, 177, 0));
+}
+
+.pay a:hover{
+    font-size: larger;
+}
+
+
+header {
+    background-color: #a79ae1;
+    position: sticky;
+    top: 0px;
+}
+
+header h1{
+    margin: 0px;
+    text-align: center;
+    color: #282641;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecera{
+    margin-bottom: 15px;
+}
+
+.logo{
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+footer {
+    background-color: #a79ae1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    padding-top: 30px;
+}
+
+footer nav{
+    text-decoration: none;
+    border: solid 1px right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3{
+    text-align: center;
+}
+
+@media screen and (max-width:960px) {
+    .logo{
+        width: 28px;
+    } 
+    .cart{
+        overflow-x: scroll;
+    }
+}

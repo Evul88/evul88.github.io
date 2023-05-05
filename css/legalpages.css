@@ -1,0 +1,111 @@
+
+body{
+    background-color: #a79ae1;
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+main{
+    background: linear-gradient(#a79ae1,white,#a79ae1);
+}
+
+a{
+    text-decoration: none;
+    color: #120907;
+    font-weight: bold;
+}
+
+a.menu{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+a.menu:hover{
+    color: white;
+}
+
+#home{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+#store{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+#bag{
+    font-family: "icomoon";
+    font-size: 25px;
+}
+
+main{
+    text-align: center;
+}
+
+main h2,main h3{
+    border-bottom: solid 1px;
+}
+
+#finaviso{
+    font-size: small;
+    font-weight: bold;
+}
+
+
+header {
+    background-color: #a79ae1;
+    position: sticky;
+    top: 0px;
+}
+
+header h1{
+    margin: 0px;
+    text-align: center;
+    color: #282641;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cabecera{
+    margin-bottom: 15px;
+}
+
+.logo{
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+footer {
+    background-color: #a79ae1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    padding-top: 30px;
+}
+
+footer nav{
+    text-decoration: none;
+    border: solid 1px right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3{
+    text-align: center;
+}
+
+@media screen and (max-width:960px) {
+    .logo{
+        width: 28px;
+    }
+}
